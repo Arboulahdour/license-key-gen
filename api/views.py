@@ -80,7 +80,6 @@ def apiOverview(request):
 ### License Keys APIs Section :
 
 @api_view(['GET'])
-@permission_classes([IsAuthenticated])
 def licenseKeyList(request):
 	keys = License_key_gen.objects.all()
 	serializer = LicenseKeyGenSerializer(keys, many=True)
