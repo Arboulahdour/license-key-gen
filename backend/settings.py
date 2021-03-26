@@ -152,7 +152,7 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 STATIC_URL = '/static/'
 
-MEDIA_URL = 'http://192.168.148.250:8080/media/'
+MEDIA_URL = 'https://license-key-gen.herokuapp.com/media/'
 
 # this is the static files folder name which you created in django project root folder. This is different from above STATIC_URL. 
 STATICFILES_DIRS = [
@@ -166,6 +166,7 @@ CORS_ORIGIN_WHITELIST = [
     'http://localhost:3000',
     'http://192.168.148.250:3000',
     'http://192.168.1.200:3000',
+    'https://licensekeysgenerator.netlify.app/',
 ]
 
 # Activate Django-Heroku.
